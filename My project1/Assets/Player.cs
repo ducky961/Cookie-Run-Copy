@@ -17,5 +17,13 @@ public class Player : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+
+        //Right move
+        if (rigid.velocity.x > maxSpeed)
+            rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
+
+        //Left move
+        else if (rigid.velocity.x < maxSpeed * (-1))
+            rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
     }
 }
