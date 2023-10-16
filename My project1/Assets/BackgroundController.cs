@@ -4,34 +4,19 @@ using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
-    public float speed;
-    public Transform[] backgrounds;
-
-    float leftPosX = 0f;
-    float rightPosX = 0f;
-    float xScreenHalfSize;
-    float yScreenHalfSize;
+    [Range(-1f,1f)]
+    float scrollSpeed = 0.5f;
+    private float offset;
+    private Material mat;
 
     void Start()
     {
-        yScreenHalfSize = Camera.main.orthographicSize;
-        xScreenHalfSize = yScreenHalfSize * Camera.main.aspect;
-
-        leftPosX = -(xScreenHalfSize * 2);
-        rightPosX = xScreenHalfSize * 2 * backgrounds.Length;
+      mat = GetComponent<Renderer>().material;
     }
+
     void Update()
     {
-        for (int i = 0; i < backgrounds.Length; i++)
-        {
-            backgrounds[i].position += new Vector3(-speed, 0, 0) * Time.deltaTime;
-
-            if (backgrounds[i].position.x < leftPosX)
-            {
-                Vector3 nextPos = backgrounds[i].position;
-                nextPos = new Vector3(nextPos.x + rightPosX, nextPos.y, nextPos.z);
-                backgrounds[i].position = nextPos;
-            }
-        }
+        offset += (Time.deltaTime * scrollSpeed) / 10f;
+        mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
     }
 }
