@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class ObjectController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Range(-1f,1f)]
+    float speed = 0.5f;
 
-    // Update is called once per frame
+    
     void Update()
     {
         
