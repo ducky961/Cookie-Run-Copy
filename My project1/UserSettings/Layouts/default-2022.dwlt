@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -791,9 +791,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 239.43735, y: 5.941474, z: -0.6508705}
+    m_Target: {x: 248.5989, y: 3.173895, z: -18.164976}
     speed: 2
-    m_Value: {x: 239.43735, y: 5.941474, z: -0.6508705}
+    m_Value: {x: 248.5164, y: 2.5096169, z: -18.151691}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -843,9 +843,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.604492
+    m_Target: 30.852043
     speed: 2
-    m_Value: 14.604492
+    m_Value: 29.523487
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -985,7 +985,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resource/Jelly
+    - Assets/Resource
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -993,16 +993,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resource/Jelly
+  - Assets/Resource
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\user\Desktop\Cookie-Run-Copy\My project1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 3a6a0000
-    m_LastClickedID: 27194
-    m_ExpandedIDs: 00000000066a0000086a00000a6a00000c6a00000e6a0000106a0000126a0000146a0000166a0000186a00001a6a00001c6a00001e6a000000ca9a3bffffff7f
+    m_SelectedIDs: 226a0000
+    m_LastClickedID: 27170
+    m_ExpandedIDs: 000000001e6a0000206a0000226a0000246a0000266a0000286a00002a6a00002c6a00002e6a0000306a0000326a0000346a0000366a00005a6a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1030,7 +1030,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000066a0000086a00000a6a00000c6a00000e6a0000106a0000126a0000146a0000166a0000186a00001a6a00001c6a00001e6a0000
+    m_ExpandedIDs: 000000001e6a0000206a0000226a0000246a0000266a0000286a00002a6a00002c6a00002e6a0000306a0000326a0000346a0000366a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1122,10 +1122,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      scrollPos: {x: 0, y: 9383}
+      m_SelectedIDs: 4e6a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 2afbffff
+      m_ExpandedIDs: f8efffff2afbffff4263000046660000aa6600008e6800007e690000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
