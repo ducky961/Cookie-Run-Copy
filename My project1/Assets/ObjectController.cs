@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class ObjectController : MonoBehaviour
 {
-    [Range(-1f,1f)]
-    float speed = 0.5f;
+    public Transform Target;
+    public float Speed = 1f;
 
-    
     void Update()
     {
-        
+        transform.position += Vector3.left * Speed *Time.deltaTime;
     }
 }
