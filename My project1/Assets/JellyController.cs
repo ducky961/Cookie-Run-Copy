@@ -28,6 +28,5 @@ public class JellyController : MonoBehaviour
 
         // 충돌이 되면 오브젝트 삭제
         Destroy(gameObject);
-        
     }
 }

@@ -5,25 +5,35 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float maxSpeed;
+    public float jumpPower;
+    SpriteRenderer spriteRenderer;
     Rigidbody2D rigid;
-    
+    Animator anim;
+
     void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rigid = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
-    
+
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
 
-        //Right move
-        if (rigid.velocity.x > maxSpeed)
-            rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
+        // 점프
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
 
-        //Left move
-        else if (rigid.velocity.x < maxSpeed * (-1))
-            rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
+            anim.SetBool("isJump",true);
+        }
+
+        // 슬라이드
+        if (Input.GetKey(KeyCode.S))
+        {
+
+        }
+
     }
 }
