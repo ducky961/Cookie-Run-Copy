@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         // 슬라이드
         if (Input.GetKey(KeyCode.S))
         {
-
+            anim.SetTrigger("");
         }
 
     }
